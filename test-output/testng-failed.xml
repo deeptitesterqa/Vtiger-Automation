@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [vtigertestsuite]" verbose="2">
+  <parameter name="browername" value="chrome"/>
+  <parameter name="browser" value="chromedriver"/>
+  <parameter name="userPasssword" value="admin"/>
+  <parameter name="userName" value="admin"/>
+  <test thread-count="5" name="VtigerMarketing(failed)" verbose="2">
+    <classes>
+      <class name="script.TestScriptForInventory">
+        <methods>
+          <include name="suite"/>
+          <include name="login"/>
+          <include name="afterSuit"/>
+          <include name="browser"/>
+          <include name="vt002CreateInvoice"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- script.TestScriptForInventory -->
+    </classes>
+  </test> <!-- VtigerMarketing(failed) -->
+</suite> <!-- Failed suite [vtigertestsuite] -->
